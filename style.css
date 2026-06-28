@@ -339,7 +339,6 @@ body {
   width: clamp(320px, 45vw, 750px);
   height: clamp(220px, 30vw, 450px);
   flex-shrink: 0;
-  border-radius: 20px;
 }
 
 .products {
@@ -429,7 +428,6 @@ body {
   aspect-ratio: 1/1;
   object-fit: cover;
   display: block;
-  border-radius: 10px;
 }
 
 .product-info {
@@ -524,7 +522,6 @@ body {
 .service-card {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
 
   transition: 0.3s ease;
 }
@@ -609,7 +606,6 @@ h3 {
 .team-card {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: 0.3s ease;
   padding: 30px;
