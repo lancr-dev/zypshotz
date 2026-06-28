@@ -415,6 +415,12 @@ body {
   position: relative;
   flex: 0 0 calc(100% / 3);
   padding: 0.7rem;
+
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
 }
 
 .product-card img {
@@ -510,7 +516,7 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 360px));
+  grid-template-columns: repeat(3, minmax(350px, 360px));
   justify-content: center;
   gap: 2rem;
 }
@@ -519,6 +525,12 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
+
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
 }
 
 .service-card img {
@@ -709,7 +721,7 @@ h3 {
   }
 
   .services-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(200px, 400px));
   }
 
   .service-card img {
