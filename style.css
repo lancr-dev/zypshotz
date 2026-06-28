@@ -772,7 +772,7 @@ h3 {
   }
 
   .team-grid {
-    grid-template-columns: minmax(100px, 200px);
+    grid-template-columns: minmax(100px, 250px);
   }
 }
 
