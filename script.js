@@ -120,3 +120,60 @@ const statsObserver = new IntersectionObserver(
 );
 
 statsObserver.observe(aboutSection);
+
+const track = document.querySelector('.carousel-track');
+const cards = document.querySelectorAll('.product-card');
+
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentIndex = 0;
+let cardsPerView = getCardsPerView();
+
+function getCardsPerView() {
+  if (window.innerWidth <= 768) return 1;
+
+  if (window.innerWidth <= 992) return 2;
+
+  return 3;
+}
+
+function updateCarousel() {
+  cardsPerView = getCardsPerView();
+
+  const cardWidth = cards[0].getBoundingClientRect().width;
+
+  track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  const maxIndex = cards.length - cardsPerView;
+
+  if (currentIndex < maxIndex) {
+    currentIndex++;
+
+    updateCarousel();
+  }
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+
+    updateCarousel();
+  }
+});
+
+window.addEventListener('resize', () => {
+  cardsPerView = getCardsPerView();
+
+  const maxIndex = cards.length - cardsPerView;
+
+  if (currentIndex > maxIndex) {
+    currentIndex = maxIndex;
+  }
+
+  updateCarousel();
+});
+
+updateCarousel();
