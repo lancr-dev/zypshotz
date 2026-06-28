@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zypshotz Digital Printing Services</title>
+  </head>
+  <body>
+    <nav>
+      <nav class="nav-bar">
+        <a class="logo-link" href="#home">
+          <div class="logo">
+            <img src="images/zypshotz-logo.jpg" alt="logo" />
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#home" class="hide-on-mobile">HOME</a>
+          <a href="#about" class="hide-on-mobile">ABOUT</a>
+          <a href="#products" class="hide-on-mobile">PRODUCTS</a>
+          <a href="#services" class="hide-on-mobile">SERVICES</a>
+          <a href="#team" class="hide-on-mobile">TEAM</a>
+          <a href="#contact" class="hide-on-mobile">CONTACT</a>
+
+          <button class="side-bar-btn" onclick="openSideBar()">
+            <img src="icons/menu.png" alt="menu/icon" width="25" height="25" />
+          </button>
+        </div>
+
+        <a href="#" target="_blank" class="msg-link"
+          ><button class="msg-btn">MESSAGE US!</button></a
+        >
+      </nav>
+
+      <div class="side-bar">
+        <button class="close-side-bar" onclick="closeSideBar()">
+          <img src="icons/close.png" alt="menu/icon" width="30" height="30" />
+        </button>
+
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#products">PRODUCTS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#team">TEAM</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home"></section>
+    <section class="about" id="about"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
