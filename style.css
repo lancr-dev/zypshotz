@@ -374,7 +374,7 @@ body {
 }
 
 .products-heading p {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: clamp(1rem, 1.2vw, 1.15rem);
   text-align: justify;
   line-height: 1.8;
@@ -465,6 +465,94 @@ body {
   transform: scale(1.08);
 }
 
+.services {
+  min-height: 100vh;
+  width: 100%;
+  padding: clamp(3rem, 6vw, 6rem) clamp(1rem, 5vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(3rem, 5vw, 5rem);
+}
+
+.services-heading {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-heading h2 {
+  font-size: clamp(0.8rem, 1vw, 1.1rem);
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services-heading h3 {
+  font-family: 'Seasons', sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 400;
+}
+
+.services-heading p {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.services-heading h2,
+.services-heading h3,
+.services-heading p {
+  color: var(--color-primary);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 360px));
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.service-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  transition: 0.35s ease;
+}
+
+.service-info {
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  padding: 0.5rem;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  color: var(--color-text);
+}
+
+.service-info h4 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-weight: 700;
+}
+
+.service-info p {
+  font-size: clamp(0.65rem, 0.85vw, 0.8rem);
+  line-height: 1.5;
+}
+
 .animate-item {
   opacity: 0;
 
@@ -526,6 +614,13 @@ body {
   .product-card img {
     aspect-ratio: 1/1;
   }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card img {
+    aspect-ratio: 1/1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -552,6 +647,22 @@ body {
 
   .product-card img {
     aspect-ratio: 1/1;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card img {
+    aspect-ratio: 1/1;
+  }
+
+  .service-info {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
   }
 }
 
