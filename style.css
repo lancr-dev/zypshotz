@@ -349,6 +349,7 @@ body {
   color: var(--color-primary);
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   line-height: 1.8;
+  text-align: justify;
 }
 
 .about-img {
@@ -724,8 +725,8 @@ h3 {
 }
 
 .contact-item img {
-  width: clamp(50px, 5vw, 72px);
-  height: clamp(50px, 5vw, 72px);
+  width: clamp(30px, 4vw, 50px);
+  height: clamp(30px, 4vw, 50px);
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -733,9 +734,9 @@ h3 {
 .contact-item span,
 .contact-item a {
   font-family: 'Seasons', sans-serif;
-  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-size: clamp(0.7rem, 1.6vw, 1.3rem);
   font-weight: 700;
-  color: #fff;
+  color: var(--color-primary);
   text-decoration: none;
   line-height: 1.5;
   word-break: break-word;
