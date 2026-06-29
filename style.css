@@ -749,6 +749,90 @@ h3 {
   text-decoration: underline;
 }
 
+footer {
+  background-color: #131313;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 50px;
+}
+
+.footer-logo-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo-image img {
+  width: 40px;
+  border-radius: 100%;
+}
+
+.footer-line1,
+.footer-line2 {
+  background-color: black;
+  width: 100%;
+}
+
+.footer-line1 {
+  height: 25px;
+  background-color: var(--color-primary);
+}
+
+.footer-line2 {
+  height: 15px;
+  background-color: var(--color-background);
+}
+
+.logo-title {
+  font-family: 'Seasons', sans-serif;
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.footer-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-media img {
+  width: 20px;
+  display: block;
+}
+
+.common-links {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.common-links a {
+  color: white;
+  text-decoration: none;
+}
+.common-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-title {
+  color: rgb(163, 163, 163);
+}
+
 .animate-item {
   opacity: 0;
 
@@ -888,6 +972,21 @@ h3 {
     justify-content: center;
 
     align-items: flex-start;
+  }
+
+  .footer-title-container,
+  .common-links,
+  .contact-info,
+  .legal {
+    align-items: center;
+  }
+
+  .footer-logo-image {
+    justify-content: center;
+  }
+
+  .contact-info {
+    text-align: center;
   }
 }
 
