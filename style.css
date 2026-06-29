@@ -65,6 +65,9 @@ body {
   display: flex;
   cursor: pointer;
   gap: 10px;
+  align-items: center;
+
+  transition: 0.3s ease;
 }
 
 .logo img {
@@ -76,7 +79,21 @@ body {
   transition: 0.5s ease;
 }
 
-.logo img:hover {
+.logo p {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  letter-spacing: 3px;
+
+  transition: 0.3s ease;
+}
+
+.logo p:hover {
+  color: var(--color-text);
+}
+
+.logo:hover {
   transform: translateX(1rem);
 }
 
@@ -760,7 +777,7 @@ h3 {
   transition-delay: 0.4s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .side-bar-btn {
     display: flex;
   }
