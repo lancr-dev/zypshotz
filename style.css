@@ -759,6 +759,12 @@ footer {
   gap: 50px;
 }
 
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .footer-logo-image {
   display: flex;
   align-items: center;
