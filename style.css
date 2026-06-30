@@ -710,7 +710,6 @@ h3 {
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: 0.3s ease;
-  padding: 30px;
   background-color: var(--color-primary);
 }
 
@@ -735,18 +734,19 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: clamp(0.8rem, 2vw, 1.2rem);
+  padding: clamp(0.7rem, 1.5vw, 1rem);
   text-align: center;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   background: rgba(255, 255, 255, 0.18);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .member-info h4 {
+  font-family: 'Seasons', sans-serif;
   font-size: clamp(1rem, 1.2vw, 1.35rem);
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 0.35rem;
 }
 
@@ -754,7 +754,7 @@ h3 {
   font-family: 'Seasons', sans-serif;
   font-size: clamp(0.85rem, 1vw, 1rem);
   opacity: 0.95;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .contact {
