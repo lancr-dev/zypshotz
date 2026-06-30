@@ -222,10 +222,6 @@ body {
   min-height: 100dvh;
 }
 
-.about {
-  min-height: 100dvh;
-}
-
 .hero {
   min-height: 100vh;
   display: flex;
@@ -457,8 +453,7 @@ body {
   backdrop-filter: blur(14px);
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  color: var(--color-text);
+  color: var(--color-secondary);
 }
 
 .product-info h4 {
@@ -532,7 +527,7 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(350px, 360px));
+  grid-template-columns: repeat(3, minmax(450px, 460px));
   justify-content: center;
   gap: 2rem;
 }
@@ -566,8 +561,7 @@ body {
   -webkit-backdrop-filter: blur(14px);
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  color: var(--color-text);
+  color: var(--color-secondary);
 }
 
 .service-info h4 {
@@ -603,7 +597,6 @@ body {
 .faq-item {
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 1rem;
   overflow: hidden;
   margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
 
