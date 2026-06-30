@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zypshotz.vercel.app/sitemap.xml
