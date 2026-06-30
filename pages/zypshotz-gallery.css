@@ -100,7 +100,7 @@ body {
 .project-card {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgb(0, 0, 0);
   transition: 0.35s;
 }
 
