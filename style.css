@@ -582,6 +582,97 @@ body {
   color: var(--color-secondary);
 }
 
+.faq {
+  width: min(90%, 900px);
+  margin-inline: auto;
+  padding-block: clamp(4rem, 8vw, 7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq-title {
+  font-family: 'Seasons', sans-serif;
+  color: var(--color-primary);
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #cfd8e3;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.faq-question {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  color: var(--color-secondary);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: clamp(1rem, 2vw, 1.4rem) clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.faq-question:hover {
+  background: #f5f7fa;
+}
+
+.faq-icon {
+  font-family: 'Cinzel', sans-serif;
+  width: clamp(18px, 2vw, 24px);
+  height: clamp(18px, 2vw, 24px);
+  flex-shrink: 0;
+  transition: transform 0.35s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.35s ease;
+
+  padding-inline: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.faq-answer p {
+  margin: 0;
+
+  padding-bottom: clamp(1.2rem, 2vw, 1.5rem);
+
+  color: #555;
+
+  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  line-height: 1.8;
+
+  overflow-wrap: break-word;
+}
+
 .team {
   min-height: 100vh;
   width: 100%;
@@ -1009,6 +1100,14 @@ footer {
 
   .about-details h1 {
     text-align: center;
+  }
+
+  .faq-question {
+    align-items: flex-start;
+  }
+
+  .faq-icon {
+    margin-top: 0.2rem;
   }
 }
 
