@@ -578,6 +578,29 @@ body {
   color: var(--color-secondary);
 }
 
+.services-gallery-btn {
+  background-color: var(--color-text);
+  color: var(--color-primary);
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 0.9rem);
+  padding: clamp(12px, 1.5vw, 20px) clamp(24px, 3vw, 45px);
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  align-self: center;
+
+  transition: all 0.3s ease;
+}
+
+.services-gallery-btn:hover {
+  opacity: 0.8;
+  transform: translateY(-1rem);
+}
+
+.services > a {
+  align-self: center;
+}
+
 .faq {
   width: min(90%, 900px);
   margin-inline: auto;
